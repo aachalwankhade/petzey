@@ -1,0 +1,118 @@
+
+
+
+
+    <!-- <p>allappointments works!</p> -->
+
+    <div class="aaEsenCountRB" >
+        <div class="itemOneAAE" >
+            <div class="text">
+                <img class="img32" src=".\assets\Icons\Icon 1.jpg" alt="" srcset="">
+
+                <p>Total</p>
+            </div>
+
+            <p class="count"><b>{{Total}}</b>
+            </p>
+        </div>
+
+        <div class="itemOneAAE">
+            <div class="text">
+                <img class="img32" src=".\assets\Icons\Icon 2.jpg" alt="" srcset="">
+
+                <p>Confirm</p>
+            </div>
+
+            <p class="count"><b>{{Confirm}}</b>
+            </p>
+        </div>
+
+        <div class="itemOneAAE">
+            <div class="text">
+                <img class="img32" src=".\assets\Icons\Icon 3.jpg" alt="" srcset="">
+
+                <p>Closed</p>
+            </div>
+            <p class="count"><b>{{Closed}}</b>
+            </p>
+        </div>
+
+        <div class="itemOneAAE">
+            <div class="text">
+                <img class="img32" src=".\assets\Icons\Icon 4.jpg" alt="" srcset="">
+
+                <p>Cancelled</p>
+            </div>
+            <p class="count"><b>{{Cancelled}}</b>
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- ALL Appointments -->
+    <div class="AllApointments" style="margin-left: 220px;">
+        <h2 class="ViewAppointment">All Appointments</h2>
+    </div>
+
+    <div class="container" >
+        <div class="FirstBox" *ngFor="let appointment of users" >
+            <div class="UpperLayer" >
+                <div class="Image">
+                    <img class="img" src="{{appointment.imageURL}}" alt="">
+                </div>
+                <div class="Information">
+                    <h4 class="Name" style="margin-left: 24px; ">
+                        {{appointment.petName}}
+                        
+                    </h4>
+                    <p class="GenderAge" style="font-size: 13px;">
+                        {{gender}} {{appointment.petAge}}Years
+                    </p>
+                    
+                    <h6 class="Owner" >
+                        Owner: {{appointment.ownerName}}
+                    </h6>
+                </div>
+            </div>
+            <div class="MiddleLayer">
+                <div class="DateTime" style="font-size: 15px; margin-right: 30px;">
+                    <h3 class="Time">{{appointment.dateTime}}</h3>
+                    <h5 class="Date">{{""}}</h5>
+                </div>
+                <div class="MessageIcon">
+                    <i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.368 2.338C23.3688 1.71976 23.1244 1.12643 22.6883 0.688142C22.2523 0.249854 21.6602 0.00238244 21.042 0H2.338C1.71849 0.00184653 1.12488 0.248764 0.686824 0.686824C0.248764 1.12488 0.00184653 1.71849 0 2.338V16.366C0.00290005 16.9848 0.250282 17.5774 0.688229 18.0146C1.12618 18.4518 1.71918 18.6982 2.338 18.7H18.7L23.38 23.38L23.368 2.338ZM18.7 14.028H4.676V11.69H18.7V14.028ZM18.7 10.521H4.676V8.183H18.7V10.521ZM18.7 7.014H4.676V4.676H18.7V7.014Z"
+                                fill="#FF692E" />
+                        </svg>
+                    </i>
+                </div>
+
+                <div class="CallIcon">
+                    <i><svg width="20" height="20" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.165 8.962C5.83265 12.2228 8.4852 14.8753 11.746 16.543L14.277 14.012C14.4275 13.8614 14.617 13.7558 14.8242 13.707C15.0314 13.6583 15.2482 13.6683 15.45 13.736C16.7754 14.1716 18.1618 14.393 19.557 14.392C19.8617 14.3931 20.1536 14.5146 20.369 14.73C20.5844 14.9454 20.7059 15.2373 20.707 15.542V19.557C20.7059 19.8617 20.5844 20.1536 20.369 20.369C20.1536 20.5844 19.8617 20.7059 19.557 20.707C16.9887 20.7071 14.4455 20.2014 12.0727 19.2186C9.69988 18.2358 7.54388 16.7952 5.72782 14.9792C3.91176 13.1631 2.47121 11.0071 1.48842 8.6343C0.505636 6.26147 -0.000131308 3.7183 2.55713e-08 1.15C0.00105427 0.845326 0.122553 0.553431 0.337992 0.337992C0.553431 0.122553 0.845326 0.00105425 1.15 0H5.177C5.48167 0.00105425 5.77357 0.122553 5.98901 0.337992C6.20445 0.553431 6.32595 0.845326 6.327 1.15C6.32503 2.54524 6.5465 3.93179 6.983 5.257C7.04874 5.45975 7.0571 5.67673 7.00716 5.88393C6.95721 6.09114 6.8509 6.28048 6.7 6.431L4.165 8.962Z"
+                                fill="#FF692E" />
+                        </svg>
+                    </i>
+                </div>
+                <div class="VideoCallIcon">
+                    <i><svg width="25" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24.088 7.515V1.67C24.0867 1.22749 23.9103 0.803489 23.5974 0.490589C23.2845 0.177688 22.8605 0.00131895 22.418 0H2.37801C1.9355 0.00131895 1.5115 0.177688 1.1986 0.490589C0.885696 0.803489 0.709327 1.22749 0.708008 1.67V18.37C0.709327 18.8125 0.885696 19.2365 1.1986 19.5494C1.5115 19.8623 1.9355 20.0387 2.37801 20.04H22.418C22.8605 20.0387 23.2845 19.8623 23.5974 19.5494C23.9103 19.2365 24.0867 18.8125 24.088 18.37V12.525L30.768 19.205V0.835L24.088 7.515ZM19.078 11.69H14.068V16.7H10.728V11.69H5.71801V8.35H10.728V3.34H14.068V8.35H19.078V11.69Z"
+                                fill="#FF692E" />
+                        </svg>
+                    </i>
+                </div>
+            </div>
+            <div class="LowerLayer">
+                <div class="Detail">
+                    <h5 class="NewDetail">Details</h5>
+                </div>
+                <div class="FeedBack">
+                    <h5 class="NewFeedback">Feedback</h5>
+                </div>
+            </div>
+        </div>
+    </div>

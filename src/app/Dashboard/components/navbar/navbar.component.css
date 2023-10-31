@@ -1,0 +1,59 @@
+.navbar {
+    background: white;
+    display: flex;
+    padding: 5px;
+    justify-content: end;
+    width: 1200px;
+    height: 10px;
+    
+}
+
+.navbar img {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 200px;
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.navS {
+    width: 100%;
+    background: #efefef82;
+    height: 100%;
+}
+
+.Name {
+
+
+    width: 98px;
+    height: 24px;
+margin-top: 1px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+
+    color: #000000;
+
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+

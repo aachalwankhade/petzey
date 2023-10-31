@@ -1,0 +1,35 @@
+
+.col-sm-4 {
+    background-color: rgb(245, 244, 243);
+    width: 200px;
+    height: 110px;
+    margin-left: 50px;
+    border-radius: 10px;
+    display: flex;
+    
+  }
+  
+  .profileimg {
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 5%;
+    
+  }
+  
+  .Dts {
+    font-size: 10px;
+  }
+  
+  .container {
+    margin: 30px;
+    margin-left: 100px;
+    
+  }
+  
+  .line1{
+    size: 20%;
+  }
+  

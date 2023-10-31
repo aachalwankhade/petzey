@@ -1,0 +1,94 @@
+<!-- <p>viewprofile works!</p> -->
+
+<div class="menBox">
+    <div class="left">
+      <div>
+        <p class="text1"><b>Account Details</b></p>
+        <p class="text2">Manage your account details and Permission here...</p>
+      </div>
+      <button routerLink="/edit-profile" class="./editPerOwener">Edit</button>
+    </div>
+    <div class="menBox2">
+      <img src="assets\doctors\Ellipse 1.png" alt="" />
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <table class="textDetails" *ngFor="let viewprofile of users">
+        <caption>
+          <tr>
+            <th class="text-muted">NAME : {{viewprofile.parentName}}</th>
+          </tr>
+          <br />
+          <tr>
+          <th class="text-muted">MOBILE : {{viewprofile.mobile}}</th>
+          </tr>
+          <br />
+          <tr>
+            <th class="text-muted">LOCATION : {{viewprofile.address}}</th>
+          </tr>
+        </caption>
+      </table>
+    </div>
+  </div>
+  <div class="menBox">
+    <div class="left">
+      <div>
+        <p class="text1"><b>Pet Details</b></p>
+        <p class="text2">Manage your Pet details here...</p>
+      </div>
+      <button class="edit" routerLink="/add-pets">+ New Pet</button>
+    </div>
+  
+    <div class="col-sm-4" style="display: flex">
+      <img class="profileimg" src="assets\pets\pet 1.jpg" alt="" />
+      <div>
+        <p
+          style="
+            font-size: small;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            padding-left: 10px;
+          "
+        >
+          <b style="font-size: medium">Doggo</b>
+        </p>
+        <p
+          class="Dts"
+          style="margin-left: 20px; margin-top: 0px; padding-left: 10px"
+        >
+          Male,2.2 years
+          <!-- <br />
+          <br />
+          <span style="">owner:john doe</span> -->
+        </p>
+        
+  
+              <!-- <header>Remove Pet</header> -->
+  
+              <!-- <p>Do you want to remove pet ?</p>
+  
+              <div class="btns">
+                <label for="check">Edit pet profile</label>
+  
+                <label for="check">Remove pet</label>
+              </div> -->
+            </div>
+            <div class="dropup">
+              <i class="fa fa-ellipsis-v" onclick=""> </i>
+      
+              <div class="dropup-content">
+                <a routerLink="/add-pets">Edit pet Profile</a>
+      
+                <a>Remove pet</a>
+      
+                <div class="background"></div>
+      
+                <div class="alert_box">
+                  <div class="icon">
+                    <i class="fas fa-vector"></i>
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,393 @@
+.itemOneAAE {
+    
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    margin-left: 20px;
+    width: 180px;
+    height: 110px;
+
+    /* Base/White */
+
+    background: #FFFFFF;
+    /* Shadow/sm */
+
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.text {
+    /* Heading */
+margin-bottom: 0px;
+margin-top: 0px;
+    width: 184px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+
+    /* Gray/900 */
+
+    color: #101828;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.img32{
+    width: 40px;
+    height: 40px;
+    margin-left: 150px;
+}
+
+.count {
+    width: 302px;
+    height: 44px;
+
+    /* Display md/Semibold */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height, or 122% */
+
+    letter-spacing: -0.02em;
+
+    /* Gray/900 */
+
+    color: #101828;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+.aaEsenCountRB {
+
+    display: flex;
+    margin-left: 90px;
+    padding-block: 60px;
+    padding-left: 130px;
+    margin-top: 20px;
+}
+
+.navbar {
+    /* width: 1200px; */
+    background: white;
+    display: flex;
+    padding: 5px;
+    justify-content: end;
+    width: 1200px;
+    height: 10px;
+
+}
+
+.navbar img {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 50px;
+    height: 50px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.Name {
+    /* Dr. John Doe */
+
+
+    width: 98px;
+    height: 24px;
+    margin-top: 1px;
+    /* Text md/Medium */
+   margin-left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+
+.RightMainContainer{
+    width: 100%;
+    height: 100%;
+    margin-right: 450px;
+    
+  }
+  .FirstMainContainer {
+    border: 1px solid black;
+    width: 83vw;
+    height: 192px;
+    
+  }
+  
+  
+  .SecondMainContainer {
+    margin: 25px;
+    margin-left: 280px;
+  }
+  .FirstMainDiv{
+    display: flex;
+    margin: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: 1544px;
+    height: 59px;
+    
+  }
+  .SelectDates{
+    margin-left: 0px;
+  }
+  
+  
+    .container {
+      margin: 30px;
+      margin-left: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      
+      
+    }
+  
+  .FirstBox {
+    /* border: 0px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 26px;
+    gap: 32px;
+    width: 180px;
+    height: 240px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgb(152, 147, 147);
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  
+  .UpperLayer {
+    /* border: 1px solid black; */
+    height: 200px;
+    width: 200px;
+    display: flex;
+  }
+  
+  .UpperLayer Image {
+    /* border: 1px solid black; */
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+  }
+  
+  .Information {
+    /* border: 1px solid black; */
+    height: 100px;
+    width: 100px;
+  }
+  
+  .MiddleLayer {
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 200px;
+    display: flex;
+  }
+  
+  .DateTime {
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 100px;
+  }
+  
+  .MessageIcon {
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 33px;
+  }
+  
+  .CallIcon {
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 33px;
+  }
+  
+  .VideoCallIcon {
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 33px;
+  }
+  
+  .LowerLayer {
+    border-top: 1px solid rgb(207, 196, 196);
+    height: 33 px;
+    width: 200px;
+    display: flex;
+  
+  }
+  
+  .Detail {
+    /* border: 1px solid black; */
+    height: 33px;
+    width: 100px;
+   
+  }
+  
+  .FeedBack {
+    /* border: 1px solid black; */
+    height: 33px;
+    width: 100px;
+  }
+  
+  /* upper layer */
+.img {
+    margin-top: 10px;
+    margin-left: 5px;
+    border: 1px solid rgb(192, 177, 177);
+    height: 67px;
+    width: 67px;
+    border-radius: 100px;
+  }
+  
+  
+  
+  .GenderAge {
+    margin-top: 3px;
+    margin-left: 14px;
+  }
+  
+  .Owner {
+    margin-top: 10px;
+    margin-left: 14px;
+  }
+  
+  /* middle layer */
+  /* Lower Layer */
+  .NewDetail {
+    margin-top: 8px;
+    margin-left: 31px;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .NewFeedback {
+    margin-top: 8px;
+    margin-left: 15px;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .SecondMainDiv {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 40px;
+    margin-right: 600px;
+  
+  }
+  
+  .Time {
+    margin-top: -5px;
+    margin-left: 13px;
+    font-weight: bold;
+    color: rgb(84 72 72);
+  
+  }
+  
+  .Date {
+    margin-top: 2px;
+    color: rgb(84 72 72);
+    margin-left: 13px;
+    font-weight: lighter;
+    /* font-weight: bold; */
+  }
+  
+  .icon {
+    margin-top: 3px;
+    height: 20px;
+    width: 20px;
+  }
+  
+  .ButtonDate
+  {
+  height: 18px;
+  width: 90px;
+  outline: none;
+  border-radius: 3px;
+  margin-left: 540px;
+  
+  }
+  .Statusoption{
+  margin-left: 8px;
+  margin-right: 8px;
+  height: 25px;
+  border-radius: 5px;
+  
+  }
+  .AppointmentBtn{
+  height: 25px;
+  border-radius: 5px;
+  background-color: orangered;
+  
+  
+  }
+  .ViewAppointment{
+  
+    font-weight: 600;
+     font-size: 30px;
+     line-height: 38px;
+     
+  }
+  .Menu{
+  text-decoration: none;
+  color: white;
+  }
+  
+  
+  
+  
